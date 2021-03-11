@@ -59,11 +59,11 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="active"> <a href="index.html">Home</a> </li>
-                                        <li> <a href="about.html">about</a> </li>
-                                        <li> <a href="album.html"> Albums</a> </li>
-                                        <li> <a href="blog.html">Blog</a> </li>
-                                        <li> <a href="contact.html">Contact</a> </li>
-                                        <li> <a href="#contact">Login</a> </li>
+                                        <li> <a href="about">about</a> </li>
+                                        <li> <a href="gallery"> Gallery</a> </li>
+                                        <li> <a href="event">Event</a> </li>
+                                        <li> <a href="contact">Contact</a> </li>
+                                        <li> <a href="donate">Donate</a> </li>
                                     </ul>
                                 </nav>
                             </div>
