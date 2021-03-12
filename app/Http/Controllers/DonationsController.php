@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Donations;
 use Illuminate\Http\Request;
+use App\User;
+use App\Mail\yfpcMail;
 
 class DonationsController extends Controller
 {
@@ -24,7 +26,8 @@ class DonationsController extends Controller
      */
     public function create()
     {
-        //
+        $user = Auth::user()->id;
+        return view('donate');
     }
 
     /**
@@ -35,7 +38,7 @@ class DonationsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Mail::to($email)->send(new yfpcMail());
     }
 
     /**

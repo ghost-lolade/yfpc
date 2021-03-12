@@ -48,7 +48,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a>
+                                    <a href="index.html"><img src="images/wwpngqqqq.png" width="70" alt="logo" /></a>
                                 </div>
                             </div>
                         </div>
@@ -58,21 +58,29 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"> <a href="index.html">Home</a> </li>
+                                        <li class="active"> <a href="/">Home</a> </li>
                                         <li> <a href="about">about</a> </li>
                                         <li> <a href="gallery"> Gallery</a> </li>
                                         <li> <a href="event">Event</a> </li>
                                         <li> <a href="contact">Contact</a> </li>
-                                        <li> <a href="donate">Donate</a> </li>
+                                        
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                        <form class="search">
-                            <input class="form-control" type="text" placeholder="Search">
-                            <button><img src="images/search_icon.png"></button>
+                        <form class="search dropdown">
+                            <button class="form-control dropbtn" type="text">Donate
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                            
+                            {{-- <button><img src="images/search_icon.png"></button> --}}
                         </form>
                     </div>
                 </div>
@@ -261,7 +269,7 @@
     <!-- end Newsletter -->
 
     <!--  footer -->
-    <footr id="footer_with_contact">
+    <footer id="footer_with_contact">
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -329,11 +337,11 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
+            {{-- <div class="copyright">
                 <p>© 2019 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
-            </div>
+            </div> --}}
         </div>
-    </footr>
+    </footer>
     <!-- end footer -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>

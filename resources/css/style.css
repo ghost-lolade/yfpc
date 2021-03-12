@@ -1343,10 +1343,10 @@
 }
 /*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
  .header {
-     background: #070100;
-     padding: 23px 0px;
-     border-top: #cf2323 solid 5px;
-     border-bottom: #cf2323 solid 5px;
+     background: #B71C1C;
+     padding: 18px 0px;
+     border-top: #fafafa solid 3px;
+     border-bottom: #fafafa solid 3px;
 }
  .logo a {
      font-size: 40px;
