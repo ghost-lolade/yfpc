@@ -148,15 +148,17 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
                         <i><img src="icon/icon1.png" alt="icon"/></i>
-                        <h3>Custom Player</h3>
-                        <p>t is a long established fact that a reader will be distracted by the readable </p>
+                        <h3>Accountability</h3>
+                        <p>Our clear cut goals makes us believe in mutual accountability with those we work and partner with.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
                         <i><img src="icon/icon2.png" alt="icon"/></i>
-                        <h3>Easy customize</h3>
-                        <p>t is a long established fact that a reader will be distracted by the readable </p>
+                        <h3>Empowerment</h3>
+                        <p>Everyone involved with YFPC, from our team and supporters to people and communities 
+                            should feel they can participate and make change happen.
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
