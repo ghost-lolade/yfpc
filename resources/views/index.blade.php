@@ -147,14 +147,14 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/icon1.png" alt="icon"/></i>
+                        <i><img src="images/acc_icon.png" alt="icon"/></i>
                         <h3>Accountability</h3>
                         <p>Our clear cut goals makes us believe in mutual accountability with those we work and partner with.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/icon2.png" alt="icon"/></i>
+                        <i><img src="images/empower_icon.png" alt="icon"/></i>
                         <h3>Empowerment</h3>
                         <p>Everyone involved with YFPC, from our team and supporters to people and communities 
                             should feel they can participate and make change happen.
@@ -163,16 +163,19 @@
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/icon3.png" alt="icon"/></i>
-                        <h3>Music Playlist</h3>
-                        <p>t is a long established fact that a reader will be distracted by the readable </p>
+                        <i><img src="images/equality_icon.png" alt="icon"/></i>
+                        <h3>Equality</h3>
+                        <p>We achieve this through our work with people of diverse cultural backgrounds 
+                            from around the world and our own internal practice.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                     <div class="for-box">
-                        <i><img src="icon/icon4.png" alt="icon"/></i>
-                        <h3>Custom Gallery</h3>
-                        <p>t is a long established fact that a reader will be distracted by the readable </p>
+                        <i><img src="images/sustain_icon.png" alt="icon"/></i>
+                        <h3>Sustainability</h3>
+                        <p>Our focus is on long-term change to effectively challenge the state of mind that imprisons human capacity to achieve the highest heights of dreams. 
+                            To ensure organizational longevity, 
+                            we believe in sustainably across all parts of our work.</p>
                     </div>
                 </div>
             </div>

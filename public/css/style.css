@@ -1469,7 +1469,7 @@
     color: white;
     transform: rotateY(180deg);
   }
-  /* end of flipcard */
+  /*=================================== end of flipcard ==================================================================================*/
  .relative {
      position: absolute;
      top: 50%;
@@ -1542,6 +1542,29 @@
      font-size:16px;
      line-height:22px;
      color:#030000;
+     border: transparent solid 3px;
+     padding: 10px;
+     box-shadow: 0 8px 10px #E53935;
+     border-radius: 8px;
+     height: 320px;
+     transition: .6s;
+     box-shadow: 4px 10px 15px #E53935;
+     letter-spacing: 1px;
+     
+}
+.music-box .for-box p:hover, .for-box i:hover {
+    border-radius: 10px;
+    background-color: #f70606ab;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: .6s;
+    font-weight: 500;
+    transition: .6s;
+}
+.music-box .for-box p:hover {
+    height: 325px;
+    width: 110%;
+    transition: .6s;
 }
 /** music-box **/
  .img-box figure {
