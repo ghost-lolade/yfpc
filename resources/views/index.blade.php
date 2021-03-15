@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -48,7 +49,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index.html"><img src="images/wwpngqqqq.png" width="70" alt="logo" /></a>
+                                    <a href="index"><img src="images/wwpngqqqq.png" width="70" alt="logo" /></a>
                                 </div>
                             </div>
                         </div>
@@ -90,14 +91,49 @@
     <!-- end header -->
     <section class="banner_section">
         <div class="banner-main">
-            <img src="images/banner2.jpg" />
+            <img src="images/pexels-c-technical-6591437.jpg" />
             <div class="container">
 
                 <div class="text-bg relative">
-                    <h1>Mp3<br><span class="Perfect">The Perfect Music</span><br>Welcome To The Music</h1>
-                    <p>Lorem ipsum dolor sit amet consec tetur adipiscing elit elit at felis lacinia nec et est
-                        <br> aptent taciti sociosqu ad litora torquent per conubia nostra</p>
-                    <a href="#">Download Now</a>
+                    <h1>YFPC<br><span class="Perfect">Youth for Purpose Canada</span><br></h1>
+                    <h2 class="sub-dynamics">...raising dynamic youths</h2>
+                    <div class="mission">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-back">
+                                    <h1 style="font-size:28px">Mission</h1> 
+                                    <p style="font-size:19px">We are on a mission
+                                        to inspire youths and younger adults
+                                         to break from every
+                                        limiting shackle holding them back
+                                        from achieving their life goals.</p>
+                                </div>
+                                <div class="flip-card-front">
+                                  <img src="images/mission.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-back">
+                                    <h1 style="font-size:28px">Mission</h1> 
+                                    <p style="font-size:19px">We are on a mission
+                                        to inspire youths and younger adults
+                                         to break from every
+                                        limiting shackle holding them back
+                                        from achieving their life goals.</p>
+                                </div>
+                                <div class="flip-card-front">
+                                  <img src="images/mission_statement.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    {{-- <p>We are on a mission to inspire youths and younger adults to break from every limiting shackle
+                        <br>holding them back from achieving their life goals.</p> --}}
+                    <a href="#">Donate Now</a>
                 </div>
 
             </div>

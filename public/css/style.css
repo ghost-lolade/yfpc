@@ -1421,6 +1421,55 @@
      z-index: 1;
      background: #B71C1C;
 } */
+.sub-dynamics { font-family: "Dancing Script"; font-size: 60px; font-style: normal; font-variant: normal}
+
+/* flip card style */
+.mission {
+    justify-content: center;
+    justify-self: center;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    display: inline-flex;
+    letter-spacing: 1px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #f70606ab;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* end of flipcard */
  .relative {
      position: absolute;
      top: 50%;
@@ -1462,6 +1511,7 @@
      font-size: 17px;
      line-height: 30px;
      color: #d70a03;
+     border-radius: 5px;
 }
  .banner-main .text-bg a:hover {
      border: #d70a03 solid 1px;

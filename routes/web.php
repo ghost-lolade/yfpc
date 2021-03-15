@@ -36,5 +36,5 @@ Route::resource('/donate', 'App\Http\Controllers\DonationsController');
 
 Route::get('/admin', function () {
     return view('about');
-});
+})->middleware('auth');
 
