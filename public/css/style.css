@@ -1607,7 +1607,7 @@
 }
  .text-box .box a {
      max-width: 167px;
-     background: #fff;
+     background: #000;
      color: #ff1d00;
      width: 100%;
      padding: 12px 0px;
@@ -1616,6 +1616,7 @@
      margin-top: 30px;
      margin-left: 250px;
      border-radius: 8px;
+     font-size: 18px;
 }
  .text-box .box a:hover {
      background: #000;

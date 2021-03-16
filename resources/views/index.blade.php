@@ -211,8 +211,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Latest News</h2>
-                        <span>It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout. The point of using Lorem </span>
+                        <h2>OUR VOLUNTEERS</h2>
+                        <span>We celebrate our volunteers<br>content of a page when looking at its layout. The point of using Lorem </span>
                     </div>
                 </div>
             </div>
@@ -220,25 +220,30 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="news-box">
                         <figure><img src="images/1.jpg" alt="img" /></figure>
-                        <h3>Live With Music</h3>
-                        <span> March 20</span><span>Comment</span>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
+                        <h3>Elisha Ayantokun</h3>
+                        <span>Missionary, Entrepreneur</span>
+                        <p>Elisha Ayantokun is the Founder/CEO of Youth for Purpose Canada, an entrepreneur, a motivational speaker and a missionary. He is also the Founder/Senior Pastor of Christ Apostolic Church Mount Bethel in Canada. He is known for his slogan as, ‘loving God, serving people’.</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="news-box">
                         <figure><img src="images/2.jpg" alt="img" /></figure>
-                        <h3>Best Music</h3>
-                        <span> March 20</span><span>Comment</span>
+                        <h3>Zacheous Somorin (</h3>
+                        <span> Journalist</span><span>Comment</span>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                     <div class="news-box">
                         <figure><img src="images/3.jpg" alt="img" /></figure>
-                        <h3>Live With Music</h3>
-                        <span> March 20</span><span>Comment</span>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
+                        <h3>DR. Jane Chibo-Ihenacho</h3>
+                        <span>General practitioner</span><span>Public health specialist</span>
+                        <p>DR. Jane Chibo-Ihenacho is a highly motivated and experienced health care professional with demonstrated history working in the clinical hospital setting and healthcare industry in general; with a sound analytical, Critical thinking, problem solving and strong leadership skill.</p>
+                        <ul>
+                            <li>MB.BS(2008) Nigeria</li>
+                            <li>MPH (2013), United kingdom</li>
+                            <li>Health care Administration/Management (2016-2017) Canada</li>
+                        </ul>
                     </div>
                 </div>
             </div>
