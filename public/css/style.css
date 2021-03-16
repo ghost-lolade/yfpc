@@ -1585,16 +1585,16 @@
      margin-left: -80px;
 }
  .text-box .box i {
-     padding-bottom: 10px;
+     padding-bottom: 5px;
 }
  .text-box .box i img {
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-left: 250px;
+     margin-left: 200px;
 }
  .text-box .box h3 {
-     font-size:55px;
+     font-size:50px;
      line-height: 60px;
      color: #fff;
      text-transform: uppercase;
@@ -1614,6 +1614,8 @@
      display: inline-block;
      text-align: center;
      margin-top: 30px;
+     margin-left: 250px;
+     border-radius: 8px;
 }
  .text-box .box a:hover {
      background: #000;

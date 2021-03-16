@@ -193,11 +193,12 @@
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
                 <div class="text-box">
                     <div class="box">
-                        <i><img src="images/5.png"/></i>
-                        <h3>MEET OUR Music STARS</h3>
-                        <p>It is a long established fact that a reader will be distracted by the readable
-                            <br> content of a page when looking at its layout. The point of using Lorem </p>
-                        <a href="#">Read More</a>
+                        <i><img src="images/volunteer.png" width="200" /></i>
+                        <h3>Become a vonlunteer</h3>
+                        <p>Volunteering is the integral core of our success stories. Holding hands in the spirit of team work, deliberate effort and passionate discharge of duties.</p>
+                        <p> You can volunteer in areas of interests such as research, editing, events, finance and human resources. We are always happy to welcome you anytime.
+                        </p>
+                        <a href="#">Volunteer</a>
                     </div>
                 </div>
             </div>
