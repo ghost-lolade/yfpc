@@ -1623,6 +1623,12 @@
      color: #ff1d00;
 }
 /** Lastestnews **/
+.small {
+    width: 50%px!important;
+    height:30% !important;
+    transition: .6s;
+    
+}
  .Lastestnews {
      padding:90px 0px;
      background: #fff;
