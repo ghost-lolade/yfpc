@@ -142,7 +142,7 @@
     </section>
 
     <!-- music-box  -->
-    <div class="music-box">
+    <div class="music-box" style="background-image: image(/images/13322.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -217,7 +217,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 box">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 box">
                     <div class="news-box box">
                         <figure><img src="images/1.jpg" alt="img" /></figure>
                         <h3>Elisha Ayantokun</h3>
@@ -225,15 +225,15 @@
                         <p>Elisha Ayantokun is the Founder/CEO of Youth for Purpose Canada, an entrepreneur, a motivational speaker and a missionary. He is also the Founder/Senior Pastor of Christ Apostolic Church Mount Bethel in Canada. He is known for his slogan as, ‘loving God, serving people’.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
                     <div class="news-box box">
                         <figure><img src="images/2.jpg" alt="img" /></figure>
-                        <h3>Zacheous Somorin (</h3>
+                        <h3>Zacheous Somorin</h3>
                         <span> Journalist</span><span>Comment</span>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 ">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 ">
                     <div class="news-box box">
                         <figure><img src="images/3.jpg" alt="img" /></figure>
                         <h3>DR. Jane Chibo-Ihenacho</h3>
@@ -246,13 +246,21 @@
                         </ul> --}}
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                    <div class="news-box box">
+                        <figure><img src="images/2.jpg" alt="img" /></figure>
+                        <h3>Zacheous Somorin</h3>
+                        <span> Journalist</span><span>Comment</span>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- end Download -->
 
     <!-- Albums -->
-    <div id="screenshot" class="Albums">
+    {{-- <div id="screenshot" class="Albums">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -290,11 +298,11 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- end Albums -->
 
     <!-- Newsletter -->
-    <div class="Newsletter">
+    {{-- <div class="Newsletter">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -311,7 +319,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
    
     <!-- end Newsletter -->
 
@@ -324,17 +332,17 @@
                         <div class="address">
                             <h3>Contact Us</h3>
                             <ul class="locarion_icon">
-                                <li><img src="icon/1.png" alt="icon" />104 New York , USA</li>
-                                <li><img src="icon/2.png" alt="icon" />Phone : ( +71 5896547 )</li>
-                                <li><img src="icon/3.png" alt="icon" />Email : demo@email.com</li>
+                                <li><img src="icon/1.png" alt="icon" />100, Penn Dr, Unit 6, North York, ON, M9L 2A9, Canada.</li>
+                                <li><img src="icon/2.png" alt="icon" />Phone : ( +1 514 627 9415, +1 647 274 1022 )</li>
+                                <li><img src="icon/3.png" alt="icon" />Email : admin@yfpc.ca</li>
 
                             </ul>
 
                             <ul class="contant_icon">
-                                <li><img src="icon/fb.png" alt="icon" /></li>
-                                <li><img src="icon/tw.png" alt="icon" /></li>
+                                <li><a href="https://web.facebook.com/Youth-for-Purpose-Canada-101954948481259"><img src="icon/fb.png" alt="icon" /></a></li>
+                                <li><a href="https://twitter.com/yfpcanada"><img src="icon/tw.png" alt="icon" /></a></li>
                                 <li><img src="icon/lin(2).png" alt="icon" /></li>
-                                <li><img src="icon/instagram.png" alt="icon" /></li>
+                                <li><a href="https://instagram.com/yfpcanada"><img src="icon/instagram.png" alt="icon" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -364,19 +372,19 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 width">
                         <div class="address">
-                            <h3>New Music </h3>
+                            <h3>Partners</h3>
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                                    <figure><img src="images/music1.jpg" /></figure>
+                                    <figure><img src="images/partner1.png" /></figure>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                                    <figure><img src="images/music2.jpg" /></figure>
+                                    <figure><img src="images/velocity-9.png" /></figure>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                                    <figure><img src="images/music3.jpg" /></figure>
+                                    <figure><img src="images/nira.png" /></figure>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                                    <figure><img src="images/music4.jpg" /></figure>
+                                    <figure><img src="images/atica.png" /></figure>
                                 </div>
                             </div>
 

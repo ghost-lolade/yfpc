@@ -1558,8 +1558,9 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     color: white;
     transition: .6s;
-    font-weight: 500;
+    transform: scale(1.15);
     transition: .6s;
+    margin-top: 5px;
 }
 .music-box .for-box p:hover {
     height: 325px;
@@ -1623,12 +1624,6 @@
      color: #ff1d00;
 }
 /** Lastestnews **/
-.small {
-    width: 50%px!important;
-    height:30% !important;
-    transition: .6s;
-    
-}
  .Lastestnews {
      padding:90px 0px;
      background: #fff;
@@ -1650,14 +1645,21 @@
      line-height: 23px;
 }
  .Lastestnews .news-box {
-     background:#fff;
-     box-shadow: #ddd 0px 0px 8px 4px;
+    background:#fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    border-radius: 18px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 0 15px;
 }
  .Lastestnews .news-box figure {
      margin: 0;
 }
  .Lastestnews .news-box figure img {
-     width: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
 }
  .Lastestnews .news-box h3 {
      font-size: 22px;
@@ -1676,6 +1678,10 @@
      line-height: 23px;
      padding: 7px 20px 20px 20px;
 }
+.news-box:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
 /** Lastestnews **/
  .Albums {
      margin-bottom: 90px;

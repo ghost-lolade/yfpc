@@ -372,15 +372,15 @@ $(function () {
 
 	// volunteer section ----------------------------------------------------
 
-	$(document).ready(function(){
-		$('.box').hover(function(){
-			$(this).addClass('act');
-			$('.box:not(.act)').addClass('small');
-		}, function() {
-			$(this).removeClass('act');
-			$('.box').removeClass('small');
-		});
-	});
+	// $(document).ready(function(){
+	// 	$('.box').hover(function(){
+	// 		$(this).addClass('act');
+	// 		$('.box:not(.act)').addClass('small');
+	// 	}, function() {
+	// 		$(this).removeClass('act');
+	// 		$('.box').removeClass('small');
+	// 	});
+	// });
 
 
 });
