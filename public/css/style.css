@@ -1427,6 +1427,8 @@
 .mission {
     justify-content: center;
     justify-self: center;
+    margin-top: 700px;
+    margin-bottom: 0;
 }
 .flip-card {
     background-color: transparent;
@@ -1435,6 +1437,7 @@
     perspective: 1000px;
     display: inline-flex;
     letter-spacing: 1px;
+   
   }
   
   .flip-card-inner {
@@ -1503,6 +1506,7 @@
 }
  .banner-main .text-bg a {
      border: #fff solid 1px;
+     position: relative;
      background: #fff;
      width: 209px;
      padding: 12px 0;
