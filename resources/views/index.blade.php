@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Rock</title>
+    <title>YFPC</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -20,7 +20,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="images/ypfc-logo-21transitions.png" type="image/gif" />
     <!-- Slider CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
@@ -49,25 +49,25 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 logo_section">
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a href="index"><img src="images/wwpngqqqq.png" width="70" alt="logo" /></a>
+                                    <a href="index"><img src="images/ypfc-logo-21transitions.png" width="70" alt="logo" /></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10">
+                    <div class="col-xl-8 col-lg-8 col-md-4 col-sm-6 ham">
                         <div class="menu-area">
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"> <a href="/">Home</a> </li>
-                                        <li> <a href="about">about</a> </li>
-                                        <li> <a href="gallery"> Gallery</a> </li>
-                                        <li> <a href="event">Event</a> </li>
-                                        <li> <a href="contact">Contact</a> </li>
+                                        <li class="activey"> <a href="/">Home</a> </li>
+                                        <li> <a href="abouty">about</a> </li>
+                                        <li> <a href="galleryy"> Gallery</a> </li>
+                                        <li> <a href="eventy">Event</a> </li>
+                                        <li> <a href="contacty">Contact</a> </li>
                                         
                                     </ul>
                                 </nav>
@@ -100,7 +100,7 @@
 
                 <div class="text-bg relative">
                     <h1>YFPC<br><span class="Perfect">Youth for Purpose Canada</span><br></h1>
-                    <h2 class="sub-dynamics">...raising dynamic youths</h2>
+                    <h4 class="sub-dynamics">...raising dynamic youths</h4>
                     
                     {{-- <p>We are on a mission to inspire youths and younger adults to break from every limiting shackle
                         <br>holding them back from achieving their life goals.</p> --}}
@@ -116,14 +116,14 @@
     <div class="music-box" style="">
         <div class="container">
             <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 values">
                     <div class="for-box">
                         <i><img src="images/acc_icon.png" alt="icon"/></i>
                         <h3>Accountability</h3>
                         <p>Our clear cut goals makes us believe in mutual accountability with those we work and partner with.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 values">
                     <div class="for-box">
                         <i><img src="images/empower_icon.png" alt="icon"/></i>
                         <h3>Empowerment</h3>
@@ -132,7 +132,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 values">
                     <div class="for-box">
                         <i><img src="images/equality_icon.png" alt="icon"/></i>
                         <h3>Equality</h3>
@@ -140,7 +140,7 @@
                             from around the world and our own internal practice.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 values">
                     <div class="for-box">
                         <i><img src="images/sustain_icon.png" alt="icon"/></i>
                         <h3>Sustainability</h3>
@@ -298,8 +298,8 @@
                             <h3>Contact Us</h3>
                             <ul class="locarion_icon">
                                 <li><img src="icon/1.png" alt="icon" />100, Penn Dr, Unit 6, North York, ON, M9L 2A9, Canada.</li>
-                                <li><img src="icon/2.png" alt="icon" />Phone : ( +1 514 627 9415, +1 647 274 1022 )</li>
-                                <li><img src="icon/3.png" alt="icon" />Email : admin@yfpc.ca</li>
+                                <li><img src="icon/2.png" alt="icon" />+1 514 627 9415, +1 647 274 1022</li>
+                                <li><img src="icon/3.png" alt="icon" />admin@yfpc.ca</li>
 
                             </ul>
 
@@ -328,27 +328,27 @@
                                     <div class="col-sm-12">
                                         <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
                                     </div>
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 mb-3">
                                         <button class="send">Send</button>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 width">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 width">
                         <div class="address">
                             <h3>Partners</h3>
                             <div class="row">
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/partner1.png" /></figure>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/velocity-9.png" /></figure>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/nira.png" /></figure>
                                 </div>
-                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/atica.png" /></figure>
                                 </div>
                             </div>

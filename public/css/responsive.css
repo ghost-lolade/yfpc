@@ -11,7 +11,8 @@
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
  @media only screen and (min-width: 599px) and (max-width: 767px) {
      .logo {
-         text-align: center;
+         float: left;
+         width: 30px;
     }
      .cart-content-right {
          padding-bottom: 5px;
@@ -20,7 +21,7 @@
          margin: 0px 0px;
     }
      .menu-area-main {
-         height: 256px;
+         background-color: red;
          overflow-y: auto;
     }
      .megamenu>.row [class*="col-"] {
@@ -113,8 +114,9 @@
          float: none;
     }
      .menu-area-main {
-         height: 290px;
-         overflow-y: auto;
+        background-color: red;
+        overflow-y: auto;
+        border-radius: 4px;
     }
      .mean-container .mean-nav ul li a.mean-expand {
          top: 0;
@@ -132,10 +134,11 @@
          line-height: 55px;
     }
      .Perfect {
-        font-size: 32px;
+        font-size: 20px;
     }
-     .banner-main .text-bg p {
-        padding: 0px 0px 17px 0px;
+    .banner-main .text-bg p {
+        padding: 200px 0px 17px 0px;
+        position: relative;
     }
      .music-box .for-box h3{
         font-size: 18px;
@@ -222,6 +225,7 @@
      .menu-area-main li.active a {
          background: transparent;
          box-shadow: inherit;
+         color: whitesmoke;
     }
      .search{
          display: none;
@@ -293,14 +297,24 @@
 }
  @media (max-width: 575px) {
      .header {
-         padding-bottom: 0px;
+         padding: 0px;
+         
     }
      .mean-container .mean-bar {
-        margin-bottom: -1px;
+        margin-bottom: 2px;
+        width: 15%;
+        float: right;
+        clear: both;
+        border-radius: 4px;
+        
     }
      .menu-area-main li.active a {
          background: transparent;
          box-shadow: inherit;
+         float: right;
+         clear: both;
+         display: none;
+         color: whitesmoke;
     }
     .contant_icon {
 
@@ -310,30 +324,85 @@
      .search{
          display: none;
     }
-     .logo {
-         float: inherit;
-         text-align: center;
+     
+    .logo_section {
+        width: 15%;
+        margin: 2px;
+        padding: 0;
     }
+    .ham{
+        
+        width: 80%;
+        margin: 2px;
+        padding: 0px;
+        
+    }
+    
      .banner-main .text-bg h1 {
         font-size: 24px;
          line-height: 38px;
     }
      .Perfect {
-        font-size: 23px;
+        font-size: 20px;
     }
+    .relative {
+        position: absolute;
+        
+        transform: translateY(-60%);
+        text-align: center;
+        right: 0;
+        left: 0;
+   }
+    
+   .sub-dynamics {
+        font-family: "Dancing Script"; 
+        font-size: 20px;
+        font-style: normal;
+        font-variant: normal
+    }
+   .banner-main {
+    position: relative;
+    
+}
      .banner-main .text-bg p {
         display: none;
     }
      .banner-main .text-bg a {
-        width: 163px;
-         padding: 3px 0;
-         font-size: 16px;
+        width: 70px;
+        padding: 0px 0;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 80px;
+         
     }
      .banner-main img {
-        height: 258px;
+        height: 100%;
+        width: 100%;
     }
      .music-box {
          padding-bottom: 60px;
+         padding-top: 40px;
+    }
+    .values {
+        width: 50%;
+        padding: 0;
+    }
+    .values .for-box {
+        padding: 0px 5px;
+        margin: 0 5px;
+    }
+    .values .for-box h3 {
+        padding-top: 18px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .values .for-box i img {
+        width: 70%;
+        
+    }
+    .values .for-box p{
+        padding: 5px;
+        height: auto;
     }
      .music-box .for-box {
          margin-bottom: 30px;
@@ -352,7 +421,8 @@
          padding-left: 15px;
     }
      .padding {
-         padding: 0 15px;
+         padding: 0 0;
+         width: 100vh;
     }
      .text-box .box {
          padding: 20px 15px;
@@ -365,6 +435,11 @@
          font-size: 22px;
          line-height: 30px;
          padding: 12px 0px 
+    }
+    .text-box .box a {
+        margin-left: 100px;
+        width: 70%;
+        max-width: 100px;
     }
      .Lastestnews {
          padding: 60px 0;

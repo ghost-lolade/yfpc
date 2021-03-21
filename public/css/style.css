@@ -1421,7 +1421,13 @@
      z-index: 1;
      background: #B71C1C;
 } */
-.sub-dynamics { font-family: "Dancing Script"; font-size: 60px; font-style: normal; font-variant: normal}
+.sub-dynamics {
+     
+    font-size: 30px; 
+    font-style: normal; 
+    font-variant: normal;
+    color: #C62828;
+}
 
 /* flip card style */
 .mission {
@@ -1483,6 +1489,7 @@
      background: #f70606ab;
      padding: 0px 20px;
      font-size: 51px;
+     position: relative;
 }
  .banner-main {
      position: relative;
@@ -1495,11 +1502,13 @@
      font-size: 70px;
      line-height: 90px;
      font-weight: bold;
+     position: relative;
 }
  .banner-main .text-bg p {
      font-size: 17px;
      padding: 0px 0px 40px 0px;
      color: #fff;
+     position: relative;
 }
  .banner-main .text-bg a {
      border: #fff solid 3px;
@@ -1513,6 +1522,7 @@
      line-height: 30px;
      color: #d70a03;
      border-radius: 5px;
+     position: relative;
 }
  .banner-main .text-bg a:hover {
      border: #d70a03 solid 1px;
@@ -1539,7 +1549,7 @@
      color: #030000;
      font-weight: bold;
      text-transform: uppercase;
-     justify-self: center;
+     text-align: center
 }
  .music-box .for-box p{
      font-size:16px;
@@ -1921,6 +1931,10 @@
  ul.contant_icon li img {
      width: 32px;
      height: 32px;
+}
+ ul.contant_icon li img:hover {
+     border-radius: 5.3px;
+    background-color: #f70e0e;
 }
  .copyright {
      background-color: #fff;
