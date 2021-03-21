@@ -38,7 +38,7 @@
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
 }
- h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
      letter-spacing: 0;
      font-weight: normal;
      position: relative;
@@ -1502,10 +1502,11 @@
      color: #fff;
 }
  .banner-main .text-bg a {
-     border: #fff solid 1px;
+     border: #fff solid 3px;
      background: #fff;
-     width: 209px;
-     padding: 12px 0;
+     width: 200px;
+     padding: 8px 0;
+    margin-top: 400px;
      display: inline-block;
      font-weight: 500;
      font-size: 17px;
@@ -1521,7 +1522,7 @@
 /** music-box **/
  .music-box {
      padding: 90px 0px;
-     background: #fff;
+     background: rgb(212, 211, 211);
 }
  .music-box .for-box {
      padding: 0px 20px;
@@ -1532,11 +1533,13 @@
 }
  .music-box .for-box h3 {
      padding-top: 28px;
+     margin-bottom: 20px;
      font-size: 20px;
      line-height: 25px;
      color: #030000;
      font-weight: bold;
      text-transform: uppercase;
+     justify-self: center;
 }
  .music-box .for-box p{
      font-size:16px;
@@ -1544,29 +1547,28 @@
      color:#030000;
      border: transparent solid 3px;
      padding: 10px;
-     box-shadow: 0 8px 10px #E53935;
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
      border-radius: 8px;
      height: 320px;
      transition: .6s;
-     box-shadow: 4px 10px 15px #E53935;
+     box-shadow: 4px 10px 15px rgba(0, 0, 0, 0.5);
      letter-spacing: 1px;
      
 }
 .music-box .for-box p:hover, .for-box i:hover {
     border-radius: 10px;
-    background-color: #f70606ab;
+    background-color: #d70a03;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     color: white;
-    transition: .6s;
-    transform: scale(1.15);
-    transition: .6s;
-    margin-top: 5px;
+   
+    transform: scale(1.08);
+    transition: .7s;
 }
-.music-box .for-box p:hover {
+/* .music-box .for-box p:hover {
     height: 325px;
     width: 110%;
     transition: .6s;
-}
+} */
 /** music-box **/
  .img-box figure {
      margin: 0px;
@@ -1575,7 +1577,7 @@
      padding: 0px;
 }
  .text-box {
-     background: #ff1d00;
+     background:#d70a03;
      width: 100%;
      height: 90%;
      margin: 32px 0px;
@@ -1609,7 +1611,7 @@
  .text-box .box a {
      max-width: 167px;
      background: #000;
-     color: #ff1d00;
+     color: rgb(185, 8, 8);;
      width: 100%;
      padding: 12px 0px;
      display: inline-block;
@@ -1621,7 +1623,7 @@
 }
  .text-box .box a:hover {
      background: #000;
-     color: #ff1d00;
+     color: rgb(185, 8, 8);;
 }
 /** Lastestnews **/
  .Lastestnews {

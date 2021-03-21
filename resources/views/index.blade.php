@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
@@ -97,40 +101,7 @@
                 <div class="text-bg relative">
                     <h1>YFPC<br><span class="Perfect">Youth for Purpose Canada</span><br></h1>
                     <h2 class="sub-dynamics">...raising dynamic youths</h2>
-                    <div class="mission">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-back">
-                                    <h1 style="font-size:28px">Mission</h1> 
-                                    <p style="font-size:19px">We are on a mission
-                                        to inspire youths and younger adults
-                                         to break from every
-                                        limiting shackle holding them back
-                                        from achieving their life goals.</p>
-                                </div>
-                                <div class="flip-card-front">
-                                  <img src="images/mission.jpg" alt="Avatar" style="width:300px;height:300px;">
-                                </div>
-                              
-                            </div>
-                        </div>
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-back">
-                                    <h1 style="font-size:28px">Mission</h1> 
-                                    <p style="font-size:19px">We are on a mission
-                                        to inspire youths and younger adults
-                                         to break from every
-                                        limiting shackle holding them back
-                                        from achieving their life goals.</p>
-                                </div>
-                                <div class="flip-card-front">
-                                  <img src="images/mission_statement.png" alt="Avatar" style="width:300px;height:300px;">
-                                </div>
-                              
-                            </div>
-                        </div>
-                    </div>
+                    
                     {{-- <p>We are on a mission to inspire youths and younger adults to break from every limiting shackle
                         <br>holding them back from achieving their life goals.</p> --}}
                     <a href="#">Donate Now</a>
@@ -142,7 +113,7 @@
     </section>
 
     <!-- music-box  -->
-    <div class="music-box" style="background-image: image(/images/13322.jpg)">
+    <div class="music-box" style="">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
@@ -205,8 +176,8 @@
         </div>
     </div>
 
-    <!-- Download -->
-    <div id="screenshot" class="Lastestnews">
+    <!-- Volunteer -->
+    {{-- <div id="screenshot" class="Lastestnews">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -239,11 +210,11 @@
                         <h3>DR. Jane Chibo-Ihenacho</h3>
                         <span>General practitioner</span><span>Public health specialist</span>
                         <p>DR. Jane Chibo-Ihenacho is a highly motivated and experienced health care professional with demonstrated history working in the clinical hospital setting and healthcare industry in general; with a sound analytical, Critical thinking, problem solving and strong leadership skill.</p>
-                        {{-- <ul>
+                        <ul>
                             <li>MB.BS(2008) Nigeria</li>
                             <li>MPH (2013), United kingdom</li>
                             <li>Health care Administration/Management (2016-2017) Canada</li>
-                        </ul> --}}
+                        </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
@@ -256,72 +227,66 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    <!-- end Volunteer -->
+
+    <!-- Road Map to Success -->
+
+    <div id="hero-slider">
+        <div id="logo" class="mask">
+            <span class="logo-text masked">Ghost Dev</span>
+        </div>
+        <div id="slideshow">
+            <div id="slides-main" class="slides">
+                <div class="slide" data-index="0">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/slide-1.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="1">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/slide-2.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="2">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/slide-3.jpg)"></div>
+                    </div>
+                </div>
+                <div class="slide" data-index="3">
+                    <div class="abs-mask">
+                        <div class="slide-image" style="background-image: url(./assets/img/slide-4.jpg)"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="slides-aux" class="slides mask">
+                <h2 class="slide-title slide" data-index="0"><a href="#">#64 Paradigm</a></h2>
+                <h2 class="slide-title slide" data-index="1"><a href="#">Industrial Works</a></h2>
+                <h2 class="slide-title slide" data-index="2"><a href="#">Future Ghosts</a></h2>
+                <h2 class="slide-title slide" data-index="3"><a href="#">The License</a></h2>
+            </div>
+        </div>
+        <div id="info">
+            <div class="slider-title-wrapper">
+                <span class="line"></span>
+                <h1 class="slider-title">
+                    <span>YFPC</span>
+                </h1>
+            </div>
+            <div class="about">
+                <p>
+                   Road Map to success is a monthly event that takes place every last sunday of the month
+                </p>
+            </div>
+        </div>
+        <nav id="slider-nav">
+            <span class="current">01</span>
+            <span class="sep"></span>
+            <span class="total">04</span>
+        </nav>
     </div>
-    <!-- end Download -->
-
-    <!-- Albums -->
-    {{-- <div id="screenshot" class="Albums">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>Albums-box </h2>
-                        <span>It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout. The point of using Lorem </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
-                    <div class="Albums-box">
-                        <figure>
-                            <a href="images/album1.jpg" class="fancybox" rel="ligthbox">
-                                <img src="images/album1.jpg" class="zoom img-fluid " alt="">
-                            </a>
-                            <span class="hoverle">
-                        <a href="images/album1.jpg" class="fancybox" rel="ligthbox"><img src="images/search.png"></a>
-                        </span>
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 margin">
-                    <div class="Albums-box">
-                        <figure>
-                            <a href="images/album2.jpg" class="fancybox" rel="ligthbox ">
-                                <img src="images/album2.jpg" class="zoom img-fluid " alt="">
-                            </a>
-                            <span class="hoverle">
-                        <a href="images/album2.jpg" class="fancybox" rel="ligthbox"><img src="images/search.png"></a>
-                        </span>
-                        </figure>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> --}}
-    <!-- end Albums -->
-
-    <!-- Newsletter -->
-    {{-- <div class="Newsletter">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <h2>Newsletter</h2>
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 padding-right">
-                            <input class="email" placeholder="Enter Your Email" type="text" name="Enter Your Email">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 padding-left">
-                            <button class="submit-btn">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
    
-    <!-- end Newsletter -->
+    <!-- end Road Map to Success -->
 
     <!--  footer -->
     <footer id="footer_with_contact">
@@ -404,6 +369,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
