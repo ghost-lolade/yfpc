@@ -14,7 +14,7 @@ class ImagesController extends Controller
      */
     public function index()
     {
-        //
+        Models::select
     }
 
     /**
