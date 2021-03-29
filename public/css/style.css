@@ -1951,13 +1951,13 @@
      color: #f70e0e 
 }
 /*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
- .about-page .footer {
+ /* .about-page .footer {
      margin-top: 90px;
-}
+} */
  .aboutbg {
-     background-color: #ff1d00;
+     background-color: #d70a03;;
 }
- .contact-page .send {
+ /* .contact-page .send {
     background: #000;
      border: #000 solid 1px;
      color: #fff;
@@ -1967,8 +1967,8 @@
  .contact-page .send:hover {
     background: #f70e0e;
      border: #f70e0e solid 1px;
-}
- .contact-page .copyright {
+} */
+ /* .contact-page .copyright {
     background: #000;
 }
  .contact-page .copyright p {
@@ -1979,7 +1979,7 @@
 }
  .contact-page .copyright p a:hover {
     color: #f70e0e;
-}
+} */
  .aboutbg .abouttitlepage h2 {
      color: #fff;
      text-transform: uppercase;
