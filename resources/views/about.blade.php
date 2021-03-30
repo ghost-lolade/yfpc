@@ -47,6 +47,9 @@
                 .</p>
                 <h4>Youth for Purpose Canada is a humanitarian organization focused on grooming future leaders by providing high-impact interaction programs to young adults. Currently located in Canada, Youth for Purpose Canada (FYPC) also has the intent to spread around nations.
                 </h4>
+                <h4><strong>MISSION: </strong>Granting access to powerful life transforming network and information.</h4>
+              <h4><strong>VISION: </strong>We are on a mission to inspire youths and younger adults to break from every limiting shackle holding them back from achieving their life goals.
+              </h4>
             </div>
             <div class="col-sm-4">
               <img class="logor" src="images/wwpngqqqq.png" alt="" srcset="">
@@ -54,7 +57,7 @@
           </div>
         </div>
         
-        <div class="container-fluid bg-grey">
+        {{-- <div class="container-fluid bg-grey">
           <div class="row about">
             <div class="col-sm-6">
                 <img class="logor" src="images/pexels-c-technical-6591437.jpg" alt="">
@@ -66,7 +69,7 @@
               </h4>
             </div>
           </div>
-        </div>
+        </div> --}}
     <div id="screenshot" class="Lastestnews">
         <div class="container">
             <div class="row">

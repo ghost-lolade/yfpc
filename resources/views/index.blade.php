@@ -5,7 +5,7 @@
     <!-- end header -->
     <section class="banner_section">
         <div class="banner-main">
-            <img src="images/banner.jpg" />
+            <img src="images/big-banner.jpg" />
             <div class="container">
 
                 <div class="text-bg relative">
@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
                 <div class="img-box">
-                    <figure><img src="images/volunteer.jpg" alt="img" /></figure>
+                    <figure><img src="images/banner.jpg" alt="img" /></figure>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
@@ -79,12 +79,57 @@
                         <p>Volunteering is the integral core of our success stories. Holding hands in the spirit of team work, deliberate effort and passionate discharge of duties.</p>
                         <p> You can volunteer in areas of interests such as research, editing, events, finance and human resources. We are always happy to welcome you anytime.
                         </p>
-                        <a href="#">Volunteer</a>
+                        <a data-toggle="modal" data-target="#myModal">Volunteer</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+{{-- Volunteer Modal --}}
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      <style>
+          #modal{
+  text-align:center;
+  padding:50px;
+}
+          .modal.fade{
+  opacity:1;
+}
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}
+      </style>
+      <script>
+                function testAnim(x) {
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+        };
+        $('#myModal').on('show.bs.modal', function (e) {
+            testAnim(fadeInRight);
+        })
+        $('#myModal').on('hide.bs.modal', function (e) {
+        var anim = $('#exit').val();
+            testAnim(fadeOutDown);
+        })
+
+      </script>
 
     <!-- Volunteer -->
     {{-- <div id="screenshot" class="Lastestnews">
@@ -150,22 +195,22 @@
             <div id="slides-main" class="slides">
                 <div class="slide" data-index="0">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./assets/img/slide-1.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-01.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./assets/img/slide-2.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-02.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="2">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./assets/img/slide-3.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-03.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="3">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./assets/img/slide-4.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-04.jpg)"></div>
                     </div>
                 </div>
             </div>

@@ -63,7 +63,7 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="{{ (request()->is('/*')) ? 'active' : '' }}"> <a href="/">Home</a> </li>
+                                        <li class="{{ (request()->is('/')) ? 'active' : '' }}"> <a href="/">Home</a> </li>
                                         <li class="{{ (request()->is('/about')) ? 'active' : '' }}"> <a href="/about">about</a> </li>
                                         <li class="{{ (request()->is('/services')) ? 'active' : '' }}"> <a href="/services"> Services</a> </li>
                                         <li class="{{ (request()->is('/event')) ? 'active' : '' }}"> <a href="/event">Event</a> </li>
@@ -150,13 +150,13 @@
                             <h3>Partners</h3>
                             <div class="row">
                                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                    <figure><img src="images/partner1.png" /></figure>
+                                    <figure><img src="images/partner 1.jpg" /></figure>
                                 </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                     <figure><img src="images/partner2.jpg" /></figure>
                                 </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                    <figure><img src="images/nira.png" /></figure>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                    <figure><img src="images/partner3.jpg" /></figure>
                                 </div>
                                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/atica.png" /></figure>
