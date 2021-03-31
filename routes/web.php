@@ -23,7 +23,7 @@ Route::get('/about', function () {
     return view('about');
 });
 Route::get('/event', function () {
-    return view('blog');
+    return view('album');
 });
 Route::get('/services', function () {
     return view('services');

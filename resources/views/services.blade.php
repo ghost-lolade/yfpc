@@ -50,18 +50,15 @@
     </style>
 
 
-    <div class="aboutbg">
+<section class="banner_section">
+    <div class="banner-main">
+        <img src="images/humanity.jpg" />
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="abouttitlepage">
-                        <h2>SERVICE TO HUMANITY</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+        </div>
     </div>
+
+</section>
 
     <section class="servicerow">
         <div class="row servicebox">

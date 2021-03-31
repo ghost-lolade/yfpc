@@ -80,9 +80,9 @@
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a href="#">Donation in support of an Event</a>
+                                <a href="#">Coronavirus Relief</a>
+                                <a href="#">In Memorial Donation</a>
                             </div>
                             
                             {{-- <button><img src="images/search_icon.png"></button> --}}
@@ -130,10 +130,10 @@
                                         <input class="contactus" placeholder="Name" type="text" name="Name">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Phone" type="text" name="Email">
+                                        <input class="contactus" placeholder="Phone" type="tel" name="phone">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="text" name="Email">
+                                        <input class="contactus" placeholder="Email" type="email" name="email">
                                     </div>
                                     <div class="col-sm-12">
                                         <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
@@ -152,15 +152,15 @@
                                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/partner 1.jpg" /></figure>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
                                     <figure><img src="images/partner2.jpg" /></figure>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                {{-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                     <figure><img src="images/partner3.jpg" /></figure>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                                </div> --}}
+                                {{-- <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
                                     <figure><img src="images/atica.png" /></figure>
-                                </div>
+                                </div> --}}
                             </div>
 
                         </div>
@@ -183,6 +183,7 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -197,6 +198,28 @@
             }, function() {
 
                 $(this).removeClass('transition');
+            });
+
+            $(".modal-button").on('click', function(e){
+                e.preventDefault();
+                modal = $($(this).attr("href"));
+                modal.css("display", "block");
+                modal.animate({
+                top: '0',
+                opacity: '1'
+                }, 400);
+            });
+            
+            $(".closed").on('click', function(e){
+                e.preventDefault();
+                modal = $($(this).closest(".modal"));
+                modal.animate({
+                top: '300',
+                opacity: '0'
+                }, 400, function(){
+                $(this).css("top", "-300px");
+                $(this).css("display", "none");
+                });
             });
         });
     </script>

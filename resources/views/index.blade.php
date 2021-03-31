@@ -75,61 +75,70 @@
                 <div class="text-box">
                     <div class="box">
                         <i><img src="images/volunteer.png" width="200" /></i>
-                        <h3>Become a vonlunteer</h3>
+                        <h3>Become a Volunteer</h3>
                         <p>Volunteering is the integral core of our success stories. Holding hands in the spirit of team work, deliberate effort and passionate discharge of duties.</p>
                         <p> You can volunteer in areas of interests such as research, editing, events, finance and human resources. We are always happy to welcome you anytime.
                         </p>
-                        <a data-toggle="modal" data-target="#myModal">Volunteer</a>
+                        <a href="#myModal1" class="modal-button">Volunteer</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 {{-- Volunteer Modal --}}
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+<!-- The Modal -->
+<div id="myModal1" class="modal" role="dialog">
+<!-- Modal content -->
+        <div class="modal-content container">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <span class="closed">×</span>
+                <div class="headertext offset-4">
+                    <p>Be A Volunteer</p>
+                </div>
             </div>
-            <div class="modal-body">
-              ...
+            <div class="modal-body row">
+                <img class="pic" src="/images/volunteer.jpg">
+                <div class="bodytext col-md-6">
+                    <h3>Why Volunteer?</h3>
+                    <ul>
+                        <li>⦁	You’ll be doing something you’re passionate about.</li>
+                        <li>⦁	You could learn new skills, or add to the ones you already have.</li>
+                        <li>⦁	You have the opportunity to meet like-minded people, from diverse backgrounds and cultures</li>
+                        <li>⦁	You’ll also learn, network and find mentors in the not-for-profit industry.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 bodytext">
+                    <h3>How can you volunteer</h3>
+                    <p>⦁	Volunteering in the office gets you up close and personal with our work. You could be chatting to supporters, researching our programs or assisting our campaigns team.</p>
+                    <p>⦁	Speaker in a YFPC group: Join an YFPC group and get the opportunity to inspire thousands of young minds such as yourself or listen to individuals who have become renown in their respective industry of choice. 
+                        You could meet people with a common interest in social justice and sustainable development.</p>
+                    <h3>Who can volunteer</h3>
+                    <p>⦁	Anyone 18 years or older can register to volunteer. Please contact us</p>
+                    <p>⦁	Internship placements at YFPC for students to gain valuable experience in the work field of community service while gaining accreditation towards the completion of relevant studies.</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <input class="contactus" placeholder="Name" type="text" name="Name">
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="contactus" placeholder="Phone" type="tel" name="phone">
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="contactus" placeholder="Email" type="email" name="email">
+                        </div> 
+                        <div class="col-sm-12 mb-3">
+                            <button class="send">Volunteer</button>
+                            <button class="send closed">Close</button>
+                        </div>
+                    </form>
+                </div>
+                
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-    </div>
-      <style>
-          #modal{
-  text-align:center;
-  padding:50px;
-}
-          .modal.fade{
-  opacity:1;
-}
-.modal.fade .modal-dialog {
-   -webkit-transform: translate(0);
-   -moz-transform: translate(0);
-   transform: translate(0);
-}
-      </style>
-      <script>
-                function testAnim(x) {
-            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
-        };
-        $('#myModal').on('show.bs.modal', function (e) {
-            testAnim(fadeInRight);
-        })
-        $('#myModal').on('hide.bs.modal', function (e) {
-        var anim = $('#exit').val();
-            testAnim(fadeOutDown);
-        })
-
-      </script>
+</div>
+  
 
     <!-- Volunteer -->
     {{-- <div id="screenshot" class="Lastestnews">
@@ -195,30 +204,30 @@
             <div id="slides-main" class="slides">
                 <div class="slide" data-index="0">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./images/rmts-01.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./images/rmts-02.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-01.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="2">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./images/rmts-03.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-02.jpg)"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="3">
                     <div class="abs-mask">
-                        <div class="slide-image" style="background-image: url(./images/rmts-04.jpg)"></div>
+                        <div class="slide-image" style="background-image: url(./images/rmts-03.jpg)"></div>
                     </div>
                 </div>
             </div>
             <div id="slides-aux" class="slides mask">
-                <h2 class="slide-title slide" data-index="0"><a href="#">#64 Paradigm</a></h2>
-                <h2 class="slide-title slide" data-index="1"><a href="#">Industrial Works</a></h2>
-                <h2 class="slide-title slide" data-index="2"><a href="#">Future Ghosts</a></h2>
-                <h2 class="slide-title slide" data-index="3"><a href="#">The License</a></h2>
+                <h2 class="slide-title slide" data-index="0"><a href="#">Road Map To Success</a></h2>
+                <h2 class="slide-title slide" data-index="1"><a href="#">January</a></h2>
+                <h2 class="slide-title slide" data-index="2"><a href="#">February</a></h2>
+                <h2 class="slide-title slide" data-index="3"><a href="#">March</a></h2>
             </div>
         </div>
         <div id="info">

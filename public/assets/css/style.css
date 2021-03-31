@@ -63,7 +63,7 @@ body {
 /* line 69, D:/WEB/Projects/Slider/assets/scss/style.scss */
 #hero-slider {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   background: #030303;
 }
