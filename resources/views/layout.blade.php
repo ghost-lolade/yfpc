@@ -48,6 +48,9 @@
         <!-- header inner -->
         <div class="header">
             <div class="container">
+                 @if (Session::has('success'))
+                                <div class="alert alert-success">{{ Session::pull('success') }}</div>
+                                @endif
                 <div class="row">
                     <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 logo_section">
                         <div class="full">
@@ -124,9 +127,10 @@
                     <div class="col-lg-5 col-md-5 col-sm-12 width">
                         <div class="address">
                             <h3>Get In Touch</h3>
-                            <form action="{{ route('contact') }}" method="POST">
-                                @if (Session::has('message'))
-                                <div class="alert alert-info">{{ Session::get('message') }}</div>
+                            <form action="{!! route ('donate') !!}" method="POST">
+                                {{ csrf_field() }}
+                                @if (Session::has('success'))
+                                <div class="alert alert-success">{{ Session::pull('success') }}</div>
                                 @endif
                                 <div class="row">
                                     <div class="col-sm-12">

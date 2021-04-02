@@ -10,15 +10,17 @@ use Illuminate\Queue\SerializesModels;
 class yfpcMail extends Mailable
 {
     use Queueable, SerializesModels;
+    
+    public $messages;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($messages)
     {
-        //
+        $this->messages = $messages;
     }
 
     /**
@@ -28,6 +30,7 @@ class yfpcMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        
+        return $this->subject('Inquiry/Contact')->view('test');
     }
 }

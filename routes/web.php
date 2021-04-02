@@ -28,13 +28,13 @@ Route::get('/event', function () {
 Route::get('/services', function () {
     return view('services');
 });
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 // only available for admin// use auth middleware// give it a name
 use App\Http\Controllers\DonationsController;
 
-Route::resource('/donate', 'App\Http\Controllers\DonationsController');
+Route::post('/contact', 'App\Http\Controllers\DonationsController@contactUs')->name('donate');
 
 
 Route::get('/admin', function () {

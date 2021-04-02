@@ -37,14 +37,16 @@ class DonationsController extends Controller
         $name = $request->name;
         $phone = $request->phone;
         $email = $request->email;
-        $message = $request->message;
+        $messages = $request->message;
+        
+        // return $message;
 
-        Mail::to($email)->send(new yfpcMail());
+        Mail::to($email)->send(new yfpcMail($messages));
 
         // Mail::to($admins)->send(new yfpcMail());
 
-        Session::flash('message', 'We will get in touch with you');
-        return Redirect::back();
+        // Session::flash('words', 'We will get in touch with you');
+        return redirect('/');
     }
 
     /**
