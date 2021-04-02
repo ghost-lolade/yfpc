@@ -1554,19 +1554,20 @@
     position: relative;
     background-color: #171B20;
     margin: auto;
-    padding: 0;
+    padding: 0, 25px;
     border: 0.0625em solid #888;
     width: 97%;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 0.375em 1.25em 0 rgba(0, 0, 0, 0.19);
   }
   .modal-content h3 {
-      font-size: 20px;
-      font-weight: 800;
-      color: #850b0b;
+      font-size: 30px;
+      font-weight: 700;
+      color: #d40606;
+      padding: 20px;
   }
   
   .closed {
-    color: #850b0b;
+    color: #d40606;
     float: right;
     font-size: 40px;
     font-weight: bold;
@@ -1585,10 +1586,22 @@
   .modal-header {
     /* padding: 0.125em 1em; */
     background-color: #171B20;
-    color: #850b0b;
+    color: #d40606;
   }
   
-  .modal-body {}
+  .bodytext p, .bodytext li{
+      padding: 8px 10px;
+  }
+  .modal-body span, .bodytext span {
+      height: 4px;
+      background-color: #999;
+      width: 80%;
+      display: inline-flex;
+      justify-self: center;
+      justify-content: center;
+      vertical-align: center;
+      border-radius: 1px;
+  }
   
   .modal-button:hover {
     background-color: #171B20;
@@ -1599,7 +1612,7 @@
     margin: auto;
     display: block;
     height: auto;
-    width: 50vh;
+    width: 60vh;
   }
   
   .headertext {
@@ -1609,10 +1622,19 @@
   }
   
   .bodytext {
-    font-size: 17px;
-    line-height: 20px;
+    font-size:20px;
+     line-height:27px;
     display: block;
+    padding: 20px 10px;
+    margin: auto;
+    display: block;
+    height: auto;
     /* padding: 0.625em 0.9375em; */
+  }
+
+  .bodytext li {
+      padding-left: 25px;
+      margin-left: 27px;
   }
   
   p {
@@ -1974,6 +1996,7 @@
      margin: 0px;
      margin-bottom: 25px;
 }
+
  .footer {
      background: #0b0808;
      padding-top: 90px;
@@ -1992,6 +2015,7 @@
 }
  .footer .address i img {
      padding-right: 10px;
+     background-color: #000;
 }
  ul.locarion_icon {
      padding-bottom: 15px;

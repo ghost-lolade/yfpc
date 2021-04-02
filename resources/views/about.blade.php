@@ -17,17 +17,41 @@
     <style>
         .logor {
           font-size: 200px;
-          width: 100%
+          width: 100%;
+          padding-top:60px; 
+          margin-top: 100px;
         }
-        .about h4 strong, .row h2 {
+        .about h4 strong, .row .words h2 {
             font-weight: 700;
-            font-size: 26px
+            font-size: 26px;
+            padding-bottom: 0;
+            text-transform: uppercase;
+            margin-bottom: 0;
         }
         .about {
             font-weight: 500;
             line-height: 2;
             font-size: 20px;
+            padding-left: 20px;
+            padding-bottom: 10px;
             
+        }
+        .about .words {
+          border: 2px solid rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.5);
+          border-radius: 8px;
+          padding-left: 20px;
+          padding-bottom: 20px;
+        }
+        .about span {
+          height: 2px;
+          background-color: #d40606;
+          width: 80%;
+          display: inline-flex;
+          justify-self: center;
+          justify-content: center;
+          vertical-align: center;
+          border-radius: 1px;
         }
         
              @media screen and (max-width: 768px) {
@@ -35,24 +59,40 @@
             text-align: center;
             margin: 25px 0;
           }
+          .about .words {
+            margin: 0;
+            margin-left: -6px;
+          }
+          .logor{
+            margin-top: -60px;
+            margin-left: -20px;
+          }
         }
         </style>
         
         <div class="container-fluid">
           <div class="row about">
-            <div class="col-sm-8 words">
-              <h2 class="center">YFPC</h2>
+            <div class="col-sm-7 words">
+              <h2 class="col-12 offset-5">YFPC</h2>
+              <span class="offset-1"></span>
               
               <p>Motivates young adults as leaders to become whatever they desire in life as long as they have access to the right information and the right people who can show them the way.
                 .</p>
-                <h4>Youth for Purpose Canada is a humanitarian organization focused on grooming future leaders by providing high-impact interaction programs to young adults. Currently located in Canada, Youth for Purpose Canada (FYPC) also has the intent to spread around nations.
+                <h4>Youth for Purpose Canada is a humanitarian organization focused on grooming future leaders by providing high-impact interaction programs to young adults. Currently located in Canada, Youth for Purpose Canada (YFPC) also has the intent to spread around nations.
                 </h4>
-                <h4><strong>MISSION: </strong>Granting access to powerful life transforming network and information.</h4>
-              <h4><strong>VISION: </strong>We are on a mission to inspire youths and younger adults to break from every limiting shackle holding them back from achieving their life goals.
+
+                <h2 class="offset-5">Mission</h2>
+                <span class="offset-1"></span>
+                <h4>Granting access to powerful life transforming network and information.
+                </h4>
+
+                <h2 class="offset-5">Vision</h2>
+                <span class="offset-1"></span>
+              <h4>We are on a mission to inspire youths and younger adults to break from every limiting shackle holding them back from achieving their life goals.
               </h4>
             </div>
-            <div class="col-sm-4">
-              <img class="logor" src="images/wwpngqqqq.png" alt="" srcset="">
+            <div class="offset-1 col-sm-3 mt-5">
+              <img class="logor" src="images/red-on-white.jpg" alt="" srcset="">
             </div>
           </div>
         </div>
@@ -77,6 +117,7 @@
   width: 25%;
   margin-bottom: 16px;
   padding: 0 20px;
+  padding-top: 20px;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -109,7 +150,18 @@
   font-size: 15px;
   font-weight: 600;
 }
-
+.column .container h2 {
+  font-size: 28px;
+  line-height: 1.6;
+}
+.column:nth-child(3) .container h2 {
+  font-size: 25px;
+  line-height: 1.7
+}
+.column:nth-child(2) .container h2 {
+  font-size: 21px;
+  line-height: 1.4
+}
 .accordion {
   background-color: rgb(161, 6, 6);
   color: white;
@@ -142,7 +194,9 @@
 
 .panel {
   padding: 3px 5px;
-  line-height: 18px
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -152,7 +206,7 @@
         <div class="row">
             <div class="column">
               <div class="card">
-                <img src="images/elijahyfpc.jpg" alt="Elijah" style="width:100%">
+                <img src="images/elijah.jpg" alt="Elijah" style="width:100%">
                 <div class="container">
                   <h2>Elijah Ayantokun</h2>
                   <p class="title">Missionary, Entrepreneur</p>
@@ -180,10 +234,10 @@
           
             <div class="column">
               <div class="card">
-                <img src="images/akinyeleyfpc.jpg" alt="Akinyele" style="width:100%">
+                <img src="images/akinyele.jpg" alt="Akinyele" style="width:100%">
                 <div class="container">
                   <h2>Akinyele Olanrewaju</h2>
-                  <p class="title">(Entrepreneur, Political Analyst, Humanitarian, Writer</p>
+                  <p class="title">Entrepreneur, Political Analyst</p>
                   <button class="button accordion">Read More</button>
                   <div class="panel">
                     <p>Akinyele Olanrewaju is the Head of Operation/ Sole Proprietor of IVE Amity Enterprises. 
@@ -197,7 +251,7 @@
 
             <div class="column">
                 <div class="card">
-                  <img src="images/janeyfpc.jpg" alt="Jane" style="width:100%">
+                  <img src="images/zach1.jpg" alt="zach" style="width:100%">
                   <div class="container">
                     <h2>Zacheous Somorin</h2>
                     <p class="title">Journalist</p>

@@ -6,6 +6,8 @@ use App\Models\Donations;
 use Illuminate\Http\Request;
 use App\User;
 use App\Mail\yfpcMail;
+use Session;
+use Mail;
 
 class DonationsController extends Controller
 {
@@ -28,6 +30,21 @@ class DonationsController extends Controller
     {
         $user = Auth::user()->id;
         return view('donate');
+    }
+
+    public function contactUs(Request $request)
+    {
+        $name = $request->name;
+        $phone = $request->phone;
+        $email = $request->email;
+        $message = $request->message;
+
+        Mail::to($email)->send(new yfpcMail());
+
+        // Mail::to($admins)->send(new yfpcMail());
+
+        Session::flash('message', 'We will get in touch with you');
+        return Redirect::back();
     }
 
     /**

@@ -7,6 +7,9 @@
         /* max-width: 800px; Maximum width */
         /* margin: 0 auto; Center it */
       }
+      .service img {
+          height: 100%
+      }
 
       /* .servicebox {
           margin-bottom: 40px;
@@ -41,11 +44,12 @@
           font-size: 18px;
           padding: 5px;
           line-height: 20px;
-          padding-left: 8px;
+          padding-left: 18px;
       }
       .words h3 {
-          padding-left: 8px;
-          font-weight: 800;
+          padding-left: 10px;
+          font-weight: 700;
+          font-size: 20px;
       }
     </style>
 
@@ -102,12 +106,12 @@
                 <p>Youth For Purpose Canada have dedicated minimum of 200 hours per individual to volunteerism in community service for the year 2021.
                 </p>
                 <h3>Our concerted effort to community services includes:</h3>
-                <ol class="row">
-                    <li class="col-md-6">Walking kids home from school.</li>
-                    <li class="col-md-6">Teaching adults about internet skills.</li>
-                    <li class="col-md-6">Organize books at our libraries.</li>
-                    <li class="col-md-6">Visit seniors in care facilities.</li>
-                    <li class="col-md-6">Fix broken signposts and so much more.</li>
+                <ol class="">
+                    <li class="">Walking kids home from school.</li>
+                    <li class="">Teaching adults about internet skills.</li>
+                    <li class="">Organize books at our libraries.</li>
+                    <li class="">Visit seniors in care facilities.</li>
+                    <li class="">Fix broken signposts and so much more.</li>
                 </ol>
             </div>
             <div class="col-md-12 space"></div>

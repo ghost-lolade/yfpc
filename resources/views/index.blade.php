@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
                 <div class="img-box">
-                    <figure><img src="images/banner.jpg" alt="img" /></figure>
+                    <figure><img src="images/volunteer2.jpg" alt="img" /></figure>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 padding">
@@ -99,7 +99,8 @@
             <div class="modal-body row">
                 <img class="pic" src="/images/volunteer.jpg">
                 <div class="bodytext col-md-6">
-                    <h3>Why Volunteer?</h3>
+                    <h3 class="offset-2">Why Volunteer?</h3>
+                    <span class="offset-1"></span>
                     <ul>
                         <li>⦁	You’ll be doing something you’re passionate about.</li>
                         <li>⦁	You could learn new skills, or add to the ones you already have.</li>
@@ -107,14 +108,19 @@
                         <li>⦁	You’ll also learn, network and find mentors in the not-for-profit industry.</li>
                     </ul>
                 </div>
+                
                 <div class="col-md-6 bodytext">
-                    <h3>How can you volunteer</h3>
+                    <h3 class="offset-2">How can you volunteer</h3>
+                    <span class="offset-1"></span>
                     <p>⦁	Volunteering in the office gets you up close and personal with our work. You could be chatting to supporters, researching our programs or assisting our campaigns team.</p>
                     <p>⦁	Speaker in a YFPC group: Join an YFPC group and get the opportunity to inspire thousands of young minds such as yourself or listen to individuals who have become renown in their respective industry of choice. 
                         You could meet people with a common interest in social justice and sustainable development.</p>
-                    <h3>Who can volunteer</h3>
+                        
+                    <h3 class="offset-2">Who can volunteer</h3>
+                    <span class="offset-1"></span>
                     <p>⦁	Anyone 18 years or older can register to volunteer. Please contact us</p>
-                    <p>⦁	Internship placements at YFPC for students to gain valuable experience in the work field of community service while gaining accreditation towards the completion of relevant studies.</p>
+                    <p>⦁	Internship placements at YFPC for students to gain valuable experience in the work field of community 
+                        service while gaining accreditation towards the completion of relevant studies.</p>
                 </div>
                 
                 <div class="col-md-6">
@@ -198,7 +204,7 @@
 
     <div id="hero-slider">
         <div id="logo" class="mask">
-            <span class="logo-text masked">Ghost Dev</span>
+            <span class="logo-text masked"></span>
         </div>
         <div id="slideshow">
             <div id="slides-main" class="slides">

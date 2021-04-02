@@ -121,22 +121,25 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 width">
+                    <div class="col-lg-5 col-md-5 col-sm-12 width">
                         <div class="address">
                             <h3>Get In Touch</h3>
-                            <form>
+                            <form action="{{ route('contact') }}" method="POST">
+                                @if (Session::has('message'))
+                                <div class="alert alert-info">{{ Session::get('message') }}</div>
+                                @endif
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Name" type="text" name="Name">
+                                        <input class="contactus" placeholder="Name" type="text" name="name" required>
                                     </div>
                                     <div class="col-sm-12">
                                         <input class="contactus" placeholder="Phone" type="tel" name="phone">
                                     </div>
                                     <div class="col-sm-12">
-                                        <input class="contactus" placeholder="Email" type="email" name="email">
+                                        <input class="contactus" placeholder="Email" type="email" name="email" required>
                                     </div>
                                     <div class="col-sm-12">
-                                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                                        <textarea class="textarea" placeholder="Message" type="text" name="message" required></textarea>
                                     </div>
                                     <div class="col-sm-12 mb-3">
                                         <button class="send">Send</button>
@@ -145,15 +148,15 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-3 width">
+                    <div class="col-lg-4 col-md-6 col-sm-3 width">
                         <div class="address">
                             <h3>Partners</h3>
                             <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                                    <figure><img src="images/partner 1.jpg" /></figure>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-4 col-4">
+                                    <figure><img class="" src="images/IVE-amilty-white.png" /></figure>
                                 </div>
                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                    <figure><img src="images/partner2.jpg" /></figure>
+                                    <figure><img class="mt-4" src="images/partner2.jpg" /></figure>
                                 </div>
                                 {{-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                     <figure><img src="images/partner3.jpg" /></figure>
