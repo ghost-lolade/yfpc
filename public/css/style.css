@@ -1647,7 +1647,22 @@
  .music-box {
      padding: 90px 0px;
      background: rgb(212, 211, 211);
+     background: linear-gradient(140deg, #E0E0E0 25%, #BDBDBD 43%, #9E9E9E 100%);
+     /* transform: skew(-30deg); */
+     
 }
+/* .music-box:after {
+    content: "";
+    bottom: 0;
+    position: relative;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent #FFFFFF transparent;
+    border-style: solid;
+    border-width: 0 0 15vw 100vw; 
+} */
+
  .music-box .for-box {
      padding: 0px 20px;
 }
@@ -1674,6 +1689,7 @@
      box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
      border-radius: 8px;
      height: 320px;
+     font-weight: 600;
      transition: .6s;
      box-shadow: 4px 10px 15px rgba(0, 0, 0, 0.5);
      letter-spacing: 1px;

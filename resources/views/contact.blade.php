@@ -1,161 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
+@section('content')
 
-<head>
-    <!-- basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>Rock</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-<!-- body -->
+<style>
+        .form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+    /* margin: auto auto; */
+    margin-top:100px;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	width: 500px;
+	height: 430px;
+}
+.form-box:before {
+	background-image: url("/images/formbg.jpg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	filter: blur(.8px);
+}
+.form .content .bodytext {
+    background-color: rgb(198,40,40, 0.95);
+    color: white;
+}
+.form .content .bodytext h3 {
+    font-size: 20px;
+    color: white;
+    margin: auto auto;
+}
+.form .content .bodytext h2 {
+    font-size: 23px;
+    color: white;
+    
+}
+</style>
 
-<body class="main-layout contact-page">
-    <!-- loader  -->
-    <div class="loader_bg">
-        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div>
-    <!-- end loader -->
-    <!-- header -->
-    <header>
-        <!-- header inner -->
-        <div class="header">
-            <div class="container">
+<div class="container form">
+    <div class="row">
+        <div class="col-md-7 content">
+            <div class="bodytext col-md-12">
+                <h3 class="offset-2">Together, we can inspire a horde of FUTURE leaders in our world</h3>
+                <span class="offset-1"></span>
+
+                
+                <ul>
+                    <li><h3>Donate for:</h3></li>
+                    <li>⦁	Donation in Support of an Event.</li>
+                    <li>⦁	Coronavirus Relief.</li>
+                    <li>⦁	In Memorial Donation</li>
+                </ul>
+            </div>
+            <div class="col-md-12 bodytext">
+                <h2 class="offset-3">MATERIAL DONATION:</h2>
+                <span class="offset-1"></span>
+                <p>⦁	We appreciate your material donation and support However, furnitures, mattresses, basic household items, 
+                    small electrical appliances, bulky household electrical appliances (refrigerators, washers, dryers, etc.), televisions and computers are not accepted.</p>
+                <p>⦁	Youth For Purpose Canada also accepts donations of clothing, non-perishable food. 
+                    These donations may be dropped at 100, Penn Dr, Unit 6, North York, ON, M9L 2A9. Youth For Purpose also organizes food drives at important holidays of the year.</p>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <form class="form-box" action="{!! route ('donate') !!}" method="POST">
+                {{ csrf_field() }}
                 <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
-                        <div class="full">
-                            <div class="center-desk">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/logo.jpg" alt="logo" /></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-12">
+                        <input class="contactus" placeholder="Name" type="text" name="name" required>
                     </div>
-                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10">
-                        <div class="menu-area">
-                            <div class="limit-box">
-                                <nav class="main-menu">
-                                    <ul class="menu-area-main">
-                                        <li> <a href="index.html">Home</a> </li>
-                                        <li> <a href="about.html">about</a> </li>
-                                        <li> <a href="album.html"> Albums</a> </li>
-                                        <li> <a href="blog.html">Blog</a> </li>
-                                        <li class="active"> <a href="contact.html">Contact</a> </li>
-                                        <li> <a href="#contact">Login</a> </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
+                    <div class="col-sm-12">
+                        <input class="contactus" placeholder="Phone" type="tel" name="phone">
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                        <form class="search">
-                            <input class="form-control" type="text" placeholder="Search">
-                            <button><img src="images/search_icon.png"></button>
-                        </form>
+                    <div class="col-sm-12">
+                        <input class="contactus" placeholder="Email" type="email" name="email" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <textarea class="textarea" placeholder="Message" type="text" name="message" required></textarea>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <button class="send offset-4">Donate</button>
                     </div>
                 </div>
-            </div>
-            <!-- end header inner -->
-    </header>
-    <!-- end header -->
-
-    <div class="contactbg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contacttitlepage">
-                        <h2>contact</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class=" col-md-6 offset-md-3">
-                <div class="address">
-
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <input class="contactus" placeholder="Name" type="text" name="Name">
-                            </div>
-                            <div class="col-sm-12">
-                                <input class="contactus" placeholder="Phone" type="text" name="Email">
-                            </div>
-                            <div class="col-sm-12">
-                                <input class="contactus" placeholder="Email" type="text" name="Email">
-                            </div>
-                            <div class="col-sm-12">
-                                <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                            </div>
-                            <div class="col-sm-12">
-                                <button class="send">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!--  footer -->
+</div>
 
-    <div class="copyright">
-        <div class="container">
-            <p>© 2019 All Rights Reserved. <a href="https://html.design/">Free html Templates</a></p>
-        </div>
-    </div>
-
-    <!-- end footer -->
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
-    <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
-            });
-
-            $(".zoom").hover(function() {
-
-                $(this).addClass('transition');
-            }, function() {
-
-                $(this).removeClass('transition');
-            });
-        });
-    </script>
-</body>
-
-</html>
+@stop

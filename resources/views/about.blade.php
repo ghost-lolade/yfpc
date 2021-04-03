@@ -29,11 +29,12 @@
             margin-bottom: 0;
         }
         .about {
-            font-weight: 500;
+            font-weight: 700;
             line-height: 2;
             font-size: 20px;
             padding-left: 20px;
             padding-bottom: 10px;
+            background: linear-gradient(140deg, #f88d8d23 25%, #EEEEEE 43%, #e95a79 100%);
             
         }
         .about .words {
@@ -92,7 +93,7 @@
               </h4>
             </div>
             <div class="offset-1 col-sm-3 mt-5">
-              <img class="logor" src="images/red-on-white.jpg" alt="" srcset="">
+              <img class="logor" src="images/ypfc logo transitions.png" alt="" srcset="">
             </div>
           </div>
         </div>
@@ -206,7 +207,7 @@
         <div class="row">
             <div class="column">
               <div class="card">
-                <img src="images/elijah.jpg" alt="Elijah" style="width:100%">
+                <img src="images/elijahyfpc.jpg" alt="Elijah" style="width:100%">
                 <div class="container">
                   <h2>Elijah Ayantokun</h2>
                   <p class="title">Missionary, Entrepreneur</p>
@@ -241,9 +242,7 @@
                   <button class="button accordion">Read More</button>
                   <div class="panel">
                     <p>Akinyele Olanrewaju is the Head of Operation/ Sole Proprietor of IVE Amity Enterprises. 
-                        A former House of Representative Candidate (Abeokuta South Federal Constituency, Ogun State, 2019), Convener; Coalition For Peoples Mandate(CFPM), A political third force in Ogun State 2015 and a believer of due diligence and process. Olanrewaju is a powerful force to reckon with in his endeavors and uses his positive attitude, gracious speeches and bravery to encourage others to work hard and not get weary of failing at an attempt. Olanrewaju is inspired daily by his brother Olalekan. 
-                        In his free time, Olanrewaju likes to play soccer, meditate and play video games with his colleagues.
-                        </p>
+                      Olanrewaju is a powerful force to reckon with in his endeavors and uses his positive attitude, gracious speeches and bravery to encourage others to work hard and not get weary of failing at an attempt. Olanrewaju is inspired daily by his brother Olalekan. In his free time, Olanrewaju likes to play soccer and meditate.</p>
                   </div>
                 </div>
               </div>
