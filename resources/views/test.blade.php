@@ -1,1 +1,0 @@
-<div>{{ $messages }}</div>

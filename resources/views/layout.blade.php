@@ -67,10 +67,10 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="{{ (request()->is('/')) ? 'active' : '' }}"> <a href="/">Home</a> </li>
-                                        <li class="{{ (request()->is('/about')) ? 'active' : '' }}"> <a href="/about">about</a> </li>
-                                        <li class="{{ (request()->is('/services')) ? 'active' : '' }}"> <a href="/services"> Services</a> </li>
-                                        <li class="{{ (request()->is('/event')) ? 'active' : '' }}"> <a href="/event">Event</a> </li>
-                                        <li class="{{ (request()->is('/footer')) ? 'active' : '' }}"> <a href="#footer_with_contact">Contact</a> </li>
+                                        <li class="{{ (request()->is('about')) ? 'active' : '' }}"> <a href="/about">about</a> </li>
+                                        <li class="{{ (request()->is('services')) ? 'active' : '' }}"> <a href="/services"> Services</a> </li>
+                                        <li class="{{ (request()->is('event')) ? 'active' : '' }}"> <a href="/event">Event</a> </li>
+                                        <li class="{{ (request()->is('footer')) ? 'active' : '' }}"> <a href="#footer_with_contact">Contact</a> </li>
                                         
                                     </ul>
                                 </nav>
@@ -127,7 +127,7 @@
                     <div class="col-lg-5 col-md-5 col-sm-12 width">
                         <div class="address">
                             <h3>Get In Touch</h3>
-                            <form action="{!! route ('donate') !!}" method="POST">
+                            <form action="{!! route ('contact_us') !!}" method="POST">
                                 {{ csrf_field() }}
                                 @if (Session::has('success'))
                                 <div class="alert alert-success">{{ Session::pull('success') }}</div>
@@ -195,8 +195,8 @@
     <script>
         $(document).ready(function() {
             $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
+                openEffect: "fadeIn",
+                closeEffect: "fadeOut"
             });
 
             $(".zoom").hover(function() {
@@ -214,7 +214,7 @@
                 modal.animate({
                 top: '0',
                 opacity: '1'
-                }, 400);
+                }, 600);
             });
             
             $(".closed").on('click', function(e){
@@ -223,7 +223,7 @@
                 modal.animate({
                 top: '300',
                 opacity: '0'
-                }, 400, function(){
+                }, 600, function(){
                 $(this).css("top", "-300px");
                 $(this).css("display", "none");
                 });

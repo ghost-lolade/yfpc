@@ -5,7 +5,7 @@
         .form-box {
 	background-color: rgba(0, 0, 0, 0.5);
     /* margin: auto auto; */
-    margin-top:100px;
+    margin-top: 100px;
 	padding: 40px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #000;
@@ -27,6 +27,14 @@
 	display: block;
 	filter: blur(.8px);
 }
+@media (max-width: 575px) {
+    .form-box:before {
+        background-size: contain;
+    }
+    .form-box .send {
+        margin: 0 auto;
+    }
+}
 .form .content .bodytext {
     background-color: rgb(198,40,40, 0.95);
     color: white;
@@ -45,7 +53,7 @@
 
 <div class="container form">
     <div class="row">
-        <div class="col-md-7 content">
+        <div class="col-md-7 col-12 content">
             <div class="bodytext col-md-12">
                 <h3 class="offset-2">Together, we can inspire a horde of FUTURE leaders in our world</h3>
                 <span class="offset-1"></span>
@@ -67,12 +75,15 @@
                     These donations may be dropped at 100, Penn Dr, Unit 6, North York, ON, M9L 2A9. Youth For Purpose also organizes food drives at important holidays of the year.</p>
             </div>
         </div>
-        <div class="col-md-5">
-            <form class="form-box" action="{!! route ('donate') !!}" method="POST">
+        <div class="col-md-5 col-12">
+            <form class="form-box col-12" action="/donates" method="POST">
                 {{ csrf_field() }}
                 <div class="row">
                     <div class="col-sm-12">
-                        <input class="contactus" placeholder="Name" type="text" name="name" required>
+                        <input class="contactus" placeholder="First Name" type="text" name="first_name" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <input class="contactus" placeholder="Last Name" type="text" name="last_name" required>
                     </div>
                     <div class="col-sm-12">
                         <input class="contactus" placeholder="Phone" type="tel" name="phone">
@@ -80,9 +91,7 @@
                     <div class="col-sm-12">
                         <input class="contactus" placeholder="Email" type="email" name="email" required>
                     </div>
-                    <div class="col-sm-12">
-                        <textarea class="textarea" placeholder="Message" type="text" name="message" required></textarea>
-                    </div>
+                    <input type="hidden" name="type" value="Donor">
                     <div class="col-sm-12 mb-3">
                         <button class="send offset-4">Donate</button>
                     </div>

@@ -7,20 +7,22 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class yfpcMail extends Mailable
+class YfpcAdminMail extends Mailable
 {
     use Queueable, SerializesModels;
-    
-    public $donor_name;
+
+    public $donor_details;
+    public $volunteer_details;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($donor_name)
+    public function __construct($donor_details)
     {
-        $this->donor_name = $donor_name;
+        $this->donor_details = $donor_details;
+        // $this->volunteer_details = $volunteer_details;
     }
 
     /**
@@ -30,7 +32,6 @@ class yfpcMail extends Mailable
      */
     public function build()
     {
-        // $this->donor_name = $donor_name;
-        return $this->subject('Thank you' )->view('user_mail');
+        return $this->subject('Donor/Volunteer')->view('admin_mail');
     }
 }

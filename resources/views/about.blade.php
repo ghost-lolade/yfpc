@@ -176,7 +176,7 @@
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.activess, .accordion:hover {
   background-color: rgb(209, 12, 12);
 }
 
@@ -189,7 +189,7 @@
   margin-left: 5px;
 }
 
-.active:after {
+.activess:after {
   content: "\2212";
 }
 
@@ -268,7 +268,7 @@
             
             for (i = 0; i < acc.length; i++) {
               acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
+                this.classList.toggle("actives");
                 var panel = this.nextElementSibling;
                 if (panel.style.maxHeight) {
                   panel.style.maxHeight = null;

@@ -31,13 +31,14 @@ Route::get('/services', function () {
 Route::get('/form', function () {
     return view('contact');
 });
-// only available for admin// use auth middleware// give it a name
+
 use App\Http\Controllers\DonationsController;
+Route::post('/contact_us', [DonationsController::class, 'contactUs'])->name('contact_us');
+Route::post('/volunteer', [DonationsController::class, 'volunteer']);
+Route::resource('/donates', DonationsController::class);
+// only available for admin// use auth middleware// give it a name
 
-Route::post('/contact', 'App\Http\Controllers\DonationsController@contactUs')->name('donate');
 
 
-Route::get('/admin', function () {
-    return view('about');
-})->middleware('auth');
+Route::get('/admin', [DonationsController::class, 'admin']);
 

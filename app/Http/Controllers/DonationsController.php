@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Donations;
+use App\Models\Donor;
+use App\Models\Volunteer;
 use Illuminate\Http\Request;
 use App\User;
 use App\Mail\yfpcMail;
+use App\Mail\yfpcAdminMail;
 use Session;
 use Mail;
 
@@ -18,7 +20,7 @@ class DonationsController extends Controller
      */
     public function index()
     {
-        return "hello world";
+        // return "hello world";
     }
 
     /**
@@ -28,8 +30,7 @@ class DonationsController extends Controller
      */
     public function create()
     {
-        $user = Auth::user()->id;
-        return view('donate');
+        
     }
 
     public function contactUs(Request $request)
@@ -38,6 +39,7 @@ class DonationsController extends Controller
         $phone = $request->phone;
         $email = $request->email;
         $messages = $request->message;
+
         
         // return $message;
 
@@ -45,7 +47,7 @@ class DonationsController extends Controller
 
         // Mail::to($admins)->send(new yfpcMail());
 
-        // Session::flash('words', 'We will get in touch with you');
+        Session::flash('words', 'We will get in touch with you');
         return redirect('/');
     }
 
@@ -57,7 +59,53 @@ class DonationsController extends Controller
      */
     public function store(Request $request)
     {
-        Mail::to($email)->send(new yfpcMail());
+        $donor = Donor::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+          ]);
+          $donor_name = $request->first_name;
+          $donor_details = $request->all();
+          $donor->save();
+          $admin = [
+              'elishaayantokun@yfpc.ca',
+              'somorin@yfpc.ca'
+          ];
+        Mail::to($request->email)->send(new yfpcMail($donor_name));
+        Mail::to($admin)->bcc(['admin@yfpc.ca', 'olanrewaju@yfpc.ca'])->send(new YfpcAdminMail($donor_details));
+
+        Session::flash('thanks', 'We appreciate your concern and we will get back you');
+        return redirect('/form');
+    }
+    public function volunteer(Request $request)
+    {
+        $volunteer = Volunteer::create([
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+          ]);
+          $donor_name = $request->first_name;
+          $volunteer_details = $request->all();
+          $volunteer->save();
+          $admin = [
+            'elishaayantokun@yfpc.ca',
+            'somorin@yfpc.ca'
+        ];
+        Mail::to($request->email)->send(new yfpcMail($donor_name));
+        Mail::to($admin)->bcc(['admin@yfpc.ca', 'olanrewaju@yfpc.ca'])->send(new YfpcAdminMail($volunteer_details));
+
+        Session::flash('thanks', 'We appreciate your concern and we will get back you');
+        return redirect('/');
+    }
+
+    public function admin() {
+
+        $donors = Donor::OrderBy('created_at', 'DESC')->paginate(5, ['*'], 'donors');
+        $volunteers =Volunteer::OrderBy('created_at', 'DESC')->paginate(5, ['*'], 'volunteers');
+        
+        return view('admin', compact('volunteers', 'donors'));
     }
 
     /**

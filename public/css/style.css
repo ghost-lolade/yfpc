@@ -1996,12 +1996,15 @@
  .send {
      font-size: 16px;
      border: #fff solid 1px;
-     padding: 10px 50px;
+     padding-left: 0;
+     padding: 10px 30px;
      background-color: #fff;
      align-items: center;
+     margin: 0 auto;
      flex-wrap: wrap;
      border-radius: 10px;
-     color: #f70e0e;
+     color: #d40606;
+    font-weight: bold;
 }
  .send:hover {
      background-color: #f70e0e;

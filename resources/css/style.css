@@ -1723,19 +1723,18 @@
      border: #b1b0b0 solid 1px;
      border-radius: 10px;
 }
- .send {
+ /* .form-box .send {
      font-size: 16px;
      border: #fff solid 1px;
-     padding: 10px 50px;
+     padding: 10px 0px;
      background-color: #fff;
-     align-items: center;
-     flex-wrap: wrap;
+     margin: 0 25px;
      border-radius: 10px;
      color: #f70e0e;
-}
+} */
  .send:hover {
      background-color: #f70e0e;
-     border: #f70e0e solid 1px;
+     /* border: #f70e0e solid 1px; */
      color: #fff;
 }
  .address figure {
